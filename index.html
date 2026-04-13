@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLSSPAK - Driving License Smart System Pakistan</title>
+    <meta name="description" content="Verify your driving license online in Pakistan securely through DLSSPAK portal.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" style="text-decoration: none;">
+                <i class="fa-solid fa-id-card"></i> DLSSPAK
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#verify" class="nav-link btn-verify-nav">Verify License</a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="app-content">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="page-section active">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>DLSSPAK – Online Verification</h1>
+                    <p>To verify your driving license online in Pakistan, you can enter your Computerized National Identity Card (CNIC) number on the relevant government website.</p>
+                    <button class="btn-primary" onclick="window.location.hash='verify'; return false;">Verify Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="hero-illustration">
+                    <div class="glass-card illustration-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Secure Digital Verification</h3>
+                        <div class="scan-line"></div>
+                        <p style="font-size: 0.8rem; margin-top: 1rem; color: var(--accent-green);">Protected by 256-bit Encryption</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AUTO SLIDER -->
+            <div class="slider-section scroll-anim">
+                <div class="slider-wrapper">
+                    <div class="slider-track" id="sliderTrack">
+
+                        <!-- Slide 1 -->
+                        <div class="slide">
+                            <div class="slide-icon"><i class="fa-solid fa-id-card-clip"></i></div>
+                            <div class="slide-body">
+                                <span class="slide-tag">DLSSPAK</span>
+                                <h2>Driving e-License Online Checking</h2>
+                                <p>On entering the CNIC number, you will get complete information regarding your vehicle's driving license status — including validity, issue date, and vehicle category.</p>
+                                <a href="#verify" class="slide-btn">Check Your License <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <div class="slide-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="slide-body">
+                                <span class="slide-tag">Secure Portal</span>
+                                <h2>256-Bit Encrypted Verification</h2>
+                                <p>Your data is always protected. Our portal connects directly with NADRA's secure database to verify license records in real-time with bank-grade encryption.</p>
+                                <a href="#verify" class="slide-btn">Verify Now <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="slide">
+                            <div class="slide-icon"><i class="fa-solid fa-car-side"></i></div>
+                            <div class="slide-body">
+                                <span class="slide-tag">All Vehicle Types</span>
+                                <h2>Motorcycle, Car, LTV &amp; HTV</h2>
+                                <p>DLSSPAK covers all categories of driving licenses — from motorcycles to heavy transport vehicles. Quickly check which vehicles your license authorises you to drive.</p>
+                                <a href="#verify" class="slide-btn">Start Verification <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="slide">
+                            <div class="slide-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                            <div class="slide-body">
+                                <span class="slide-tag">24/7 Available</span>
+                                <h2>Anytime, Anywhere Access</h2>
+                                <p>No need to visit any office. Access the DLSSPAK portal any time of day or night from any device. Instant license status is just a few clicks away.</p>
+                                <a href="#verify" class="slide-btn">Access Portal <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="slide">
+                            <div class="slide-icon"><i class="fa-solid fa-traffic-light"></i></div>
+                            <div class="slide-body">
+                                <span class="slide-tag">Traffic Authority</span>
+                                <h2>Powered by Pakistan Traffic Police</h2>
+                                <p>DLSSPAK is an initiative of the Pakistan Traffic Police to digitise license verification, reduce fraud, and empower citizens with transparent, instant access to license records.</p>
+                                <a href="#about" class="slide-btn">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div><!-- /.slider-track -->
+                </div><!-- /.slider-wrapper -->
+
+                <!-- Dots -->
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                </div>
+            </div>
+
+            <!-- Tags Marquee Slider -->
+            <div class="tags-marquee-outer">
+                <div class="tags-marquee-track">
+                    <!-- Set 1 -->
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> License Verification</span>
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> CNIC Based Search</span>
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> Real-Time Status</span>
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> 256-bit Secure</span>
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> 24/7 Online</span>
+                    <!-- Set 2 (duplicate for seamless loop) -->
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> License Verification</span>
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> CNIC Based Search</span>
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> Real-Time Status</span>
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> 256-bit Secure</span>
+                    <span class="feature-tag"><i class="fa-solid fa-check-circle"></i> 24/7 Online</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="page-section">
+            <div class="section-container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text glass-card scroll-anim">
+                        <p>Traffic Police is one of the five police jurisdictions in the capital city and is responsible for managing and controlling traffic matters of a huge area of 1257 square kilometers. The Traffic force, established in 1971, comprising of 500 police officers and personnel, controls the road traffic, which has lately become a major task for the police.</p>
+                        <p>Due to the increase in volume of road traffic, causing continuous traffic congestion in the cities especially in peak hours, the demands on the police to meet with the situation for smooth running of traffic has a corresponding increase.</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="glass-card about-stat scroll-anim" style="transition-delay: 0.1s">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <h3>1257 sq km</h3>
+                            <p>Jurisdiction Area</p>
+                        </div>
+                        <div class="glass-card about-stat scroll-anim" style="transition-delay: 0.2s">
+                            <i class="fa-solid fa-user-group"></i>
+                            <h3>500+</h3>
+                            <p>Police Personnel</p>
+                        </div>
+                        <div class="glass-card about-stat scroll-anim" style="transition-delay: 0.3s">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <h3>1971</h3>
+                            <p>Established Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="page-section">
+            <div class="section-container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 class="section-title text-center" style="margin-bottom: 1rem;">Get In Touch</h2>
+                    <p class="text-muted">We are here to help. Send us your query securely.</p>
+                </div>
+
+                <div class="contact-wrapper-centered scroll-anim">
+                    <div class="contact-form glass-card" style="max-width: 700px; margin: 0 auto; padding: 3rem;">
+                        <h3 class="text-center" style="margin-bottom: 2rem; font-size: 1.8rem;">How can we help you?</h3>
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" required placeholder="e.g. John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" required placeholder="e.g. john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Brief subject of your message">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" rows="6" required placeholder="Write your complete message here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-100 btn-large" style="justify-content: center; margin-top: 1rem;">
+                                <i class="fa-regular fa-paper-plane"></i> Send Secure Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VERIFY LICENSE SECTION -->
+        <section id="verify" class="page-section">
+            <div class="section-container verify-container">
+                <div class="glass-card verify-box scroll-anim">
+                    <h2 class="section-title text-center">Verify License</h2>
+                    <p class="text-center text-muted">Enter your details through our secure portal to verify driving license status.</p>
+
+                    <form id="verifyForm">
+                        <div class="form-group">
+                            <label for="cnic">CNIC Number</label>
+                            <div class="input-icon">
+                                <i class="fa-regular fa-id-card"></i>
+                                <input type="text" id="cnic" placeholder="e.g. 12345-1234567-1" required maxlength="15">
+                            </div>
+                            <small class="text-muted">Sample CNIC: 12345-1234567-1</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Secure PIN / Password</label>
+                            <div class="input-icon">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="password" placeholder="Enter your secret PIN" required>
+                            </div>
+                            <small class="text-muted"><i class="fa-solid fa-shield-halved"></i> 256-bit hashed secure transmission</small>
+                        </div>
+                        <button type="submit" class="btn-primary w-100 btn-large" style="justify-content: center;">
+                            <i class="fa-solid fa-magnifying-glass"></i> Verify License
+                        </button>
+                    </form>
+
+                    <!-- Loading Spinner -->
+                    <div id="verifyLoading" class="hidden">
+                        <div class="spinner"></div>
+                        <p>Verifying securely via NADRA...</p>
+                    </div>
+
+                    <!-- Result Area -->
+                    <div id="verifyResult" class="hidden result-area">
+                        <!-- Content dynamically injected via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="#home" class="footer-logo" style="text-decoration: none;">
+                <i class="fa-solid fa-id-card" style="-webkit-text-fill-color: var(--accent-green);"></i> DLSSPAK
+            </a>
+            <p>&copy; 2026 Driving License Smart System Pakistan. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Gov Web Portal</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
